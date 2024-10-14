@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfolio</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .header section img {
+        text-align: center;
+        width: 200px;    
+        border: #2c3e50;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 6rem 0 2rem;
+        }
+
+        section {
+            background-color: #fff;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        /* About section */
+        #about {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        #about img {
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Projects section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .project {
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            padding: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Skills section */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: #3498db;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* Contact form */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        form input,
+        form textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #2c3e50;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #34495e;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            #about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="#sobre mim">sobre mim</a></li>
+                <li><a href="#Meu futuro e projetos">futuro</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="sobre mim">
+            <img src="700f8566-6101-4359-97c3-7d619ace9762.jpg" alt="foto de perfil de Victor">
+            <div>
+                <h1>sobre mim</h1>
+                <p>Meu nome é Victor Fernando Vasconcelos Ramos Leandro Maciel, tenho 18 anos. Sou apaixonado em jogos estilo FPS, sou calmo e gosto de aprender e entender sobre coisas que envolve tecnologia</p>
+            
+            
+    
+        </div>
+        </section>
+
+        <section id="Meu futuro">
+            <h2>meu futuro e projetos</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Universidade</h3>
+                  <p>Atualmente cursando Ciência da Computação na Universidade de Vila Velha, Espirito Santo. Meu primeiro projeto é terminar meu curso com excelência.</p>
+                </div>
+                <div class="Meu futuro">
+                    <h3>intercâmbio</h3>
+                  <p>Pretendo fazer um intercâmbio para elevar meu nivel de inglês para ingressar em empresas estrangeiras.</p>
+                </div>
+                <div class="Meu futuro">
+                    <h3>sonhos</h3>
+                    <p> Busco ter uma vida consideralvemente boa, aonde eu consiga me sustentar e ter o que eu almejo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Habilidades">
+            <h2>Habilidades</h2>
+            <div class="Habilidades">
+                <span class="Habilidades">HTML</span>
+                <span class="Habilidades">CSS</span>
+                <span class="Habilidades">UI/UX Design</span>
+            </div>
+        </section>
+
+        <section id="entre emContato!">
+            <h2>entre em contato!</h2>
+            <form>
+                <input type="text" name="name" placeholder="Nome" required aria-label="Nome">
+                <input type="email" name="email" placeholder="Gmail" required aria-label="Gmail">
+                <textarea name="message" placeholder="Sua Mensagem" required aria-label="Mensagem"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Victor F.</p>
+    </footer>
+</body>
+</html>
